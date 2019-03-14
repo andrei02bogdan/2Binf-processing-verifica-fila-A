@@ -1,6 +1,6 @@
 
 int x = 1000;
-int d = 4;
+int d = 10;
 
 PShape piuma;
 PShape hermione;
@@ -24,7 +24,7 @@ void draw() {
   shape( hermione, width*0.1, height*0.5);
   hermione.setFill(color(#8E551B)); 
   lights();
-  
-  x = x - d;
-
+  if ( x > width*0.025 ) {
+    x = x - d;
+  }
 }
